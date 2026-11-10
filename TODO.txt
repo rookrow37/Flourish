@@ -1,0 +1,39 @@
+TODO: 
+    start image needs to scale properly
+    link images need to fit in the ornament images
+    finish news letter
+    log in / sign up tab
+    save files
+    footer
+    implement save files database
+
+    gallery page wire frame
+        -- compile all of the gallery images
+        -- create a spreadsheet for the appropriate information for the participating artists
+        -- horizontal scrolling galleries
+            -- one for guest artists
+            -- one for "official art"
+            -- one for concepts (unlockable through story progression)
+
+
+        Fix:
+            one gallery works but adding a second breaks it
+
+
+    character page wire frame
+        -- selection screen -> sub screen displays selected character information
+            -- only one of these needs to actually work, can do the rest at a later date
+        -- compile character information and related character images
+
+    chapter select page wire frame
+        -- act -> chapter -> page
+        -- you will be able to select the act and have the chapters in a drop down
+        -- select the chapter and have the page numbers drop down
+    
+    page displays   
+        -- page selected from chapter selection page will send you to selected page
+        -- the page displays will be a gallery with the entire chapter
+            -- page galleries are arrow opperated, or swipe opperated on mobile (like instagram)
+        -- should have buttons to direct to the next chapter and last chapter either above or below the pages
+
+    
