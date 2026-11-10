@@ -1,0 +1,38 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+/* main css styling */
+body {
+    background: #0C3329 url(../images/bg/leaves.png) repeat;
+    background-size: 700px auto;
+}
+
+.wrapper {
+    /* set width */
+    /* set positioning parent */
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+}
+
+header{
+    height: 10.3rem;
+    background: #45a07d;
+    position: relative;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(to right, #065e40, #45a07d, #065e40);
+}
+
+#logoLink {
+    /* center in header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    max-width: 20%;
+    height: auto;
+}
