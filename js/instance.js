@@ -28,7 +28,7 @@ function changeSlide(buttonElement, direction) {
     showSlide(container, slideIndices[containerIndex], containerIndex);
 }
 
-// Internal function to manage display toggle and bounds
+// function to manage display toggle and bounds
 function showSlide(container, targetIndex, containerIndex) {
     const slides = container.querySelectorAll('.gallerySlide');
     
@@ -48,14 +48,22 @@ function showSlide(container, targetIndex, containerIndex) {
 
 // when the dots are clicked change the displayed image 
 // to the image corresponding to the clicked dot
-function currentSlide(buttonElement, index) {
-// Find the parent container of the clicked span tag
-    const container = buttonElement.closest('.gallery');
-    const containers = Array.from(document.querySelectorAll('.gallery'));
-    const containerIndex = containers.indexOf(container);
+function currentSlide(index) {
+    // take the passed in index from the function call and 
+    // change the displayed image to the image corresponding to the clicked dot
 
-    slideIndices[containerIndex] = index;
-    showSlide(container, index, containerIndex);
+
+
+    // this breaks it v 
+    // targetIndex = index;
+    // const slides = document.querySelectorAll('.gallerySlide');
+
+    // // Hide all slides inside this specific container
+    // slides.forEach(slide => slide.style.display = "none");
+    
+    // // Show the active slide
+    // slides[targetIndex].style.display = "block";
+
 };
 
 // Run the script on window load
