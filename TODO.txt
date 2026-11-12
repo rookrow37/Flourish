@@ -15,11 +15,6 @@ TODO:
             -- one for "official art"
             -- one for concepts (unlockable through story progression)
 
-
-        Fix:
-            one gallery works but adding a second breaks it
-
-
     character page wire frame
         -- selection screen -> sub screen displays selected character information
             -- only one of these needs to actually work, can do the rest at a later date
@@ -29,6 +24,9 @@ TODO:
         -- act -> chapter -> page
         -- you will be able to select the act and have the chapters in a drop down
         -- select the chapter and have the page numbers drop down
+
+        Fix:
+        
     
     page displays   
         -- page selected from chapter selection page will send you to selected page

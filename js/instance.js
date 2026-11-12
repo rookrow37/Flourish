@@ -51,19 +51,18 @@ function showSlide(container, targetIndex, containerIndex) {
 function currentSlide(index) {
     // take the passed in index from the function call and 
     // change the displayed image to the image corresponding to the clicked dot
-
-
-
-    // this breaks it v 
-    // targetIndex = index;
-    // const slides = document.querySelectorAll('.gallerySlide');
-
-    // // Hide all slides inside this specific container
-    // slides.forEach(slide => slide.style.display = "none");
+    // get the gallery container that the clicked dot belongs to
+    const container = event.target.closest('.gallery');
     
-    // // Show the active slide
-    // slides[targetIndex].style.display = "block";
-
+    // Find the index of this container out of all slideshow containers
+    const containers = Array.from(document.querySelectorAll('.gallery'));
+    const containerIndex = containers.indexOf(container);
+    
+    // Update the index for this specific slideshow
+    slideIndices[containerIndex] = index - 1; // Adjust for zero-based index
+    
+    // Show the updated slide
+    showSlide(container, index, containerIndex);
 };
 
 // Run the script on window load
