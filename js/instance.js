@@ -46,5 +46,17 @@ function showSlide(container, targetIndex, containerIndex) {
     slides[targetIndex].style.display = "block";
 }
 
+// when the dots are clicked change the displayed image 
+// to the image corresponding to the clicked dot
+function currentSlide(buttonElement, index) {
+// Find the parent container of the clicked span tag
+    const container = buttonElement.closest('.gallery');
+    const containers = Array.from(document.querySelectorAll('.gallery'));
+    const containerIndex = containers.indexOf(container);
+
+    slideIndices[containerIndex] = index;
+    showSlide(container, index, containerIndex);
+};
+
 // Run the script on window load
 window.onload = initGalleries;
