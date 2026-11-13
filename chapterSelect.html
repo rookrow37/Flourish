@@ -6,16 +6,26 @@
     <title>Flourish Chapter Select</title>
     <link rel="stylesheet" href="css/chapterSelect.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/hoverAnimations.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <a id="logoLink" href="#"><img id="logo" src="images/indexImgs/IMG_2804.PNG" alt="Flourish Logo"></a>
+            <a id="logoLink" href="index.html"><img id="logo" src="images/indexImgs/IMG_2804.PNG" alt="Flourish Logo"></a>
         </header>
         <main>
-            <div id="chapterSelectContainer">
+            <div id="act1">
                 <div id="chapterSelectTitle">
-                    <h1>CHAPTER SELECT</h1>
+                    <h1>Act 1</h1>
+                </div>
+                <div id="chapterSelect">
+                    <div class="chapterLink" id="chapter1">
+                        <!-- when the user hovers over the ornament, it should change to the second version -->
+                        <img onmouseenter="this.src='images/ornaments/Orn6.1.png'" onmouseleave="this.src='images/ornaments/Orn6.2.png'" src="images/ornaments/Orn6.2.png" alt="ornament" class="chapterOrn hover2">
+                        <a href="#" class="chapterCover">
+                            <img class="chapterCoverImg" src="images/indexImgs/start.jpg" alt="chapterCover">
+                        </a>
+                    </div>
                 </div>
             </div>   
 

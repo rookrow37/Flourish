@@ -5,9 +5,58 @@
 }
 
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: 15rem;
     color: #fff;
+}
+
+#act1{
+    position: relative;
+    /* this will set up the drop down for act 1 later */
+}
+
+#chapterSelectTitle {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#chapterSelect {
+    /* this will set up the grid for the chapter covers */
+    position: relative;
+}
+
+.chapterLink {
+    position: relative;
+    display:block;
+    margin: 1rem 2rem;
+    width: 21.75%;
+    height: 25rem;
+}
+
+.chapterOrn {
+    position: absolute;
+    top: 0;
+    left: -1.75rem;
+    height: 100%;
+    z-index: 2;
+}
+
+.chapterCover {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.chapterCoverImg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
